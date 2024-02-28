@@ -19,21 +19,9 @@ function getTokenFromConfig() {
         const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
         return config.token;
     } catch (error) {
-        console.error(red("[-] Error while parsing config.json"));
+        console.error(red("[-] error while parsing config.json"));
         return null;
     }
-}
-
-function makeid(length) {
-    let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    const charactersLength = characters.length;
-    let counter = 0;
-    while (counter < length) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-      counter += 1;
-    }
-    return result;
 }
 
 const client = new Client();
@@ -57,7 +45,7 @@ client.on('ready', async () => {
             .filter(member => !filteredUserIds.includes(member.user.id))
             .map(member => member.user.id);
 
-        const fileName = `scraped_${guild.name.trim()}_${makeid(5)}.txt`;
+        const fileName = `scraped.txt`;
         fs.writeFile(fileName, memberIds.join('\n'), err => {
             if (err) {
                 console.error(red(`[-] error while saving ids to file ${fileName}`));
