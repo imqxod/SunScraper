@@ -11,8 +11,8 @@ Discord server member scraper written in Node.js
 ## Usage
 
 - **Clone the repo**
-- **Do 'npm install' in the project folder**
-- **Run 'node .'**
+- **Install packages**
+- **Run main.js'**
 
 
 
