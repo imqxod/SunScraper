@@ -12,7 +12,7 @@ Discord server member scraper written in Node.js
 
 - **Clone the repo**
 - **Install packages**
-- **Run main.js'**
+- **Run `node .`**
 
 
 
