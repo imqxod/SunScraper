@@ -27,7 +27,7 @@ Just make a pull request
 
 ## Authors
 
-- [@toxinsfx](https://www.github.com/toxinsfx)
+- [@toxinsfx](https://www.github.com/toxinsfx) / [@imqxod](https://www.github.com/imqxod)
 
 
 
